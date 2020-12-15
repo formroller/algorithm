@@ -26,7 +26,7 @@ from itertools import combinations
 def solution(numbers):
     return sorted(list(set([sum([i,j]) for i,j in combinations(numbers,2)])))
     
-
+itertools : 효율적인 반복을 만드는 함수
 set([]) , 집합
 combinations(p,r) : r-길이 튜플들, 정렬된 순서, 반복 요소 없음
 ex) combinations('ABCD', 2) : AB AC AD BC BD CD
